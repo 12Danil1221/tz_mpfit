@@ -8,7 +8,7 @@
     width: 12rem; height: 20rem;">
             <h2>{{ $post->title }}</h2>
             <img src="{{ $post->image }}" alt="1image">
-            <p>{{ $post->price }} $</p>
+            <p>{{ $post->price }} руб.</p>
             <br>
             <a href="{{ route('posts.show', $post) }}">Подробнее</a>
             <hr>

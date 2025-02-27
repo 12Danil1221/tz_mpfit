@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('image');
-            $table->integer('price');
+            $table->float('price');
             $table->string('category');
             $table->text('content');
             $table->timestamps();

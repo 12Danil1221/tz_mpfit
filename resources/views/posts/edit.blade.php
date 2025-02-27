@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Post</title>
     @livewire('main-style')
+
     <style>
     .hero {
         position: relative;
@@ -17,8 +18,7 @@
     .hero_content {
         display: grid;
     }
-    </style>
-    <style>
+
     body {
         background-color: rgba(17, 17, 17, 0.3);
 
@@ -88,6 +88,9 @@
 
                     <label>Название:</label>
                     <input type="text" name="title" value="{{ $post->title }}" required>
+                    <br>
+                    <label>Цена:</label>
+                    <input type="float" name="price" value="{{ $post->price }}" required>
                     <br>
                     <label>Описание:</label>
                     <textarea name="content" required>{{ $post->content }}</textarea>
